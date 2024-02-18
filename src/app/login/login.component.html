@@ -1,0 +1,20 @@
+<!-- login.component.html -->
+<form [formGroup]="registerForm">
+    <label>Email: </label>
+    <input type="email" formControlName="email" />
+  
+    <label>Password: </label>
+    <input type="password" formControlName="password" />
+  
+    <button (click)="onRegister()">register</button>
+  </form>
+<form [formGroup]="loginForm">
+    <label>Email: </label>
+    <input type="email" formControlName="email" />
+  
+    <label>Password: </label>
+    <input type="password" formControlName="password" />
+  
+    <button (click)="onLogin()">login</button>
+  </form>
+  
